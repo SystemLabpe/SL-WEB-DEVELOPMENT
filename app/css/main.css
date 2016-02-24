@@ -28,6 +28,11 @@ a, a:hover, a:focus {
   text-decoration: none;
 }
 
+.reveal p {
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.2;
+}
+
 .reveal section img {
   border: 0;
   background: none;
@@ -35,14 +40,33 @@ a, a:hover, a:focus {
 }
 
 .reveal h1 {
-  /*font-size: 1.5em;*/
+  font-family: 'Archivo Black', sans-serif;
   text-transform: none;
-  /*color: #FFFFFF;*/
+  font-size: 2em;
+  margin-top: 50px;
+}
+
+.reveal h2, .reveal .title-optional {
+  font-family: 'Anton', sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+}
+
+.reveal .title-optional {
+  display: block;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
 /* ==================================================
     Sections
 ================================================== */
+#home .main {
+  font-family: 'Anton', sans-serif;
+  display: block;
+  font-size: 1.5em;
+}
+
 #home .logo-sign {
   margin: 100px 0 0;
 }
@@ -51,6 +75,16 @@ a, a:hover, a:focus {
     Benefits
 ================================================== */
 #benefits .benefit {
-  padding: 0 20px;
-  font-size: 30px;
+  padding: 0 40px;
+}
+
+#benefits .benefit img {
+  display: block;
+  max-width: 160px;
+  margin: 20px auto;
+  border-radius: 50%;
+}
+
+#benefits .benefit p {
+  font-size: 20px;
 }
