@@ -10,6 +10,8 @@ gulpif = require('gulp-if'),
 minifyCss = require('gulp-minify-css'),
 useref = require('gulp-useref'),
 uglify = require('gulp-uglify'),
+imagemin = require('gulp-imagemin'),
+pngquant = require('imagemin-pngquant'),
 historyApiFallback = require('connect-history-api-fallback');
 
 // Servidor web de desarrollo
@@ -104,6 +106,16 @@ gulp.task('copy', function() {
   .pipe(gulp.dest('./dist/img'));
 });
 
+gulp.task('img-optimize',function(){
+  return gulp.src('./app/img/**')
+    .pipe(imagemin({
+      progressive: true,
+      svgoPlugins: [{removeViewBox: false}],
+      use: [pngquant()]
+    }))
+    .pipe(gulp.dest('./dist/img'));
+});
+
 // Vigila cambios que se produzcan en el código
 // y lanza las tareas relacionadas
 gulp.task('watch', function() {
@@ -114,4 +126,4 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', ['server', 'inject', 'wiredep', 'watch']);
-gulp.task('build', ['compress', 'copy']);
+gulp.task('build', ['compress', 'img-optimize', 'copy']);

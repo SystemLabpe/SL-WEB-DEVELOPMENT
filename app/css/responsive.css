@@ -1,0 +1,105 @@
+@media only screen and (max-width: 768px){
+
+  .reveal h2, .reveal .title-optional {
+    font-size: 0.8em;
+    letter-spacing: 2px;
+  }
+
+  .reveal .title-optional {
+    display: block;
+    font-weight: 100;
+    line-height: 1;
+  }
+
+  .reveal p {
+    line-height: 1;
+    font-size: 0.8em;
+  }
+
+/* ==================================================
+    Home
+================================================== */
+  .reveal h1 {
+    font-size: 1em;
+    line-height: 1;
+    margin-top: 0;
+  }
+
+  #home .main {
+    font-size: 1.2em;
+    line-height: 1;
+  }
+
+  /* ==================================================
+    Benefits
+================================================== */
+  #benefits {
+    top: 0 !important;
+    padding: 0;
+  }
+
+  #benefits p {
+    font-size: 1em;
+  }
+
+  #benefits .benefits-container {
+    padding: 0;
+  }
+
+  .benefits-list {
+    list-style-type: disc !important;
+    margin-left: 20px !important;
+  }
+
+  .benefits-list li {
+    display: list-item;
+  }
+
+  .benefits-list li img {
+    display: none;
+  }
+
+  #benefits .benefit-col-left, #benefits .benefit-col-right {
+    margin-left: 0;
+  }
+
+  .benefits-list p {
+    margin: 0;
+  }
+
+  /* ==================================================
+    Analytics
+================================================== */
+  #analytics .title-optional{
+    margin-top: 50px;
+  }
+
+  #analytics-2 p {
+    margin: 10px 0;
+  }
+
+  #analytics-2 .ga-list li{
+    font-size: 0.6em;
+  }
+
+  /* ==================================================
+    Portfolio
+================================================== */
+  #portfolio .project img {
+    padding: 10px;
+  }
+
+  /* ==================================================
+    Thanks
+================================================== */
+  #thanks .thanks-container {
+    margin-left: 0;
+  }
+
+  #thanks .thanks-container .second {
+    font-size: 26px;
+  }
+
+
+
+}
